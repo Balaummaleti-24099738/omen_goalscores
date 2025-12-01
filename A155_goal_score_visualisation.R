@@ -139,3 +139,4 @@ cat("   V =", w_result$statistic,
 
 if(t_result$p.value < 0.001) cat("\n→ Very strong evidence of home advantage!\n")
 
+
