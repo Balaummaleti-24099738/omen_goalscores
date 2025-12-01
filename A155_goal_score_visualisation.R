@@ -1,6 +1,6 @@
 getwd()
 
-df <- read.csv("goalscorers.csv")
+df <- read.csv("C:/Users/vijju/OneDrive/Desktop/A155_women_goalscores/womens_goalscorers.csv")
 install.packages("ggplot2")
 install.packages("dplyr")
 
@@ -108,7 +108,7 @@ library(dplyr)
 library(tidyr)
 
 # Load data
-df <- read_csv("goalscorers.csv")
+df <- read_csv("C:/Users/vijju/OneDrive/Desktop/A155_women_goalscores/womens_goalscorers.csv")
 match_goals <- df %>%
   # Mark each goal as Home or Away
   mutate(goal_for = ifelse(team == home_team, "Home",
@@ -138,3 +138,4 @@ cat("   V =", w_result$statistic,
     "  p-value =", format.pval(w_result$p.value, digits = 4), "\n")
 
 if(t_result$p.value < 0.001) cat("\n→ Very strong evidence of home advantage!\n")
+
